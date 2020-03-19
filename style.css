@@ -1,0 +1,36 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.navbar ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	background-color: black;
+}
+.navbar a {
+	text-decoration: none;
+	display: flex;
+	padding: 15px;
+	color: white;
+}
+.navbar a:hover  {
+	background-color: white;
+	color: black;
+}
+.navbar li {
+	position: relative;
+}
+.dropdown li {
+	display: none;
+}
+.navbar ul li:hover .dropdown li {
+	display: block;
+}
+.dropdown {
+	flex-direction: column;
+	width: 200%;
+	position: absolute;
+}
